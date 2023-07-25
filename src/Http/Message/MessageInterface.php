@@ -58,15 +58,7 @@ interface MessageInterface
      * @return string
      */
     public function rawBody(): string;
-
-    /**
-     * Get upload files.
-     *
-     * @param string|null $name
-     * @return array|null
-     */
-    public function file(string $name = null): ?array;
-
+    
     /**
      * Get raw buffer.
      *
