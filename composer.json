@@ -1,0 +1,30 @@
+{
+  "name": "localzet/psr",
+  "description": "Localzet PSR Component for projects",
+  "type": "library",
+  "keywords": [
+    "localzet",
+    "PSR"
+  ],
+  "license": "AGPL-3.0-or-later",
+  "authors": [
+    {
+      "role": "Developer",
+      "name": "Ivan Zorin",
+      "email": "creator@localzet.com",
+      "homepage": "https://github.com/localzet"
+    }
+  ],
+  "support": {
+    "email": "support@localzet.com",
+    "source": "https://github.com/localzet/PSR"
+  },
+  "autoload": {
+    "psr-4": {
+      "localzet\\PSR\\": "src"
+    }
+  },
+  "require": {
+    "php": "^8.2"
+  }
+}
