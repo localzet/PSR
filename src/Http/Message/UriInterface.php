@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace localzet\PSR\Http\Message;
 
@@ -18,11 +19,11 @@ use InvalidArgumentException;
  * state of the current instance and return an instance that contains the
  * changed state.
  *
- * Typically the Host header will be also be present in the request message.
+ * Typically, the Host header will be also be present in the request message.
  * For server-side requests, the scheme will typically be discoverable in the
  * server parameters.
  *
- * @package PSR-7 (HTTP Message Interfaces)
+ * @package PSR-7 (HTTP Message)
  * @link http://tools.ietf.org/html/rfc3986 (the URI specification)
  */
 interface UriInterface

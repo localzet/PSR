@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace localzet\PSR\Http\Message;
 
@@ -11,7 +12,7 @@ use RuntimeException;
  * a wrapper around the most common operations, including serialization of
  * the entire stream to a string.
  *
- * @package PSR-7 (HTTP Message Interfaces)
+ * @package PSR-7 (HTTP Message)
  */
 interface StreamInterface
 {
@@ -158,5 +159,5 @@ interface StreamInterface
      *     provided. Returns a specific key value if a key is provided and the
      *     value is found, or null if the key is not found.
      */
-    public function getMetadata(?string $key = null): mixed;
+    public function getMetadata(?string $key = null);
 }

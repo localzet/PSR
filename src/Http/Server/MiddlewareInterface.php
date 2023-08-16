@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace localzet\PSR\Http\Server;
 
@@ -11,7 +12,7 @@ use localzet\PSR\Http\Message\{ResponseInterface, ServerRequestInterface};
  * by acting on the request, generating the response, or forwarding the
  * request to a subsequent middleware and possibly acting on its response.
  *
- * @package PSR-15 (HTTP Server Request Handlers)
+ * @package PSR-15 (HTTP Server)
  */
 interface MiddlewareInterface
 {

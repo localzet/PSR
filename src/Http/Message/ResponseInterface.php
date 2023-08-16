@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace localzet\PSR\Http\Message;
 
@@ -19,7 +20,7 @@ use InvalidArgumentException;
  * be implemented such that they retain the internal state of the current
  * message and return an instance that contains the changed state.
  *
- * @package PSR-7 (HTTP Message Interfaces)
+ * @package PSR-7 (HTTP Message)
  */
 interface ResponseInterface extends MessageInterface
 {

@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace localzet\PSR\Http\Message;
 
@@ -42,7 +43,7 @@ use InvalidArgumentException;
  * be implemented such that they retain the internal state of the current
  * message and return an instance that contains the changed state.
  *
- * @package PSR-7 (HTTP Message Interfaces)
+ * @package PSR-7 (HTTP Message)
  */
 interface ServerRequestInterface extends RequestInterface
 {
@@ -130,7 +131,7 @@ interface ServerRequestInterface extends RequestInterface
      * Retrieve normalized file upload data.
      *
      * This method returns upload metadata in a normalized tree, with each leaf
-     * an instance of Psr\Http\Message\UploadedFileInterface.
+     * an instance of localzet\PSR\Http\Message\UploadedFileInterface.
      *
      * These values MAY be prepared from $_FILES or the message body during
      * instantiation, or MAY be injected via withUploadedFiles().
@@ -168,7 +169,7 @@ interface ServerRequestInterface extends RequestInterface
      * @return null|array|object The deserialized body parameters, if any.
      *     These will typically be an array or object.
      */
-    public function getParsedBody(): object|array|null;
+    public function getParsedBody();
 
     /**
      * Return an instance with the specified body parameters.
@@ -192,13 +193,13 @@ interface ServerRequestInterface extends RequestInterface
      * immutability of the message, and MUST return an instance that has the
      * updated body parameters.
      *
-     * @param object|array|null $data The deserialized body data. This will
+     * @param null|array|object $data The deserialized body data. This will
      *     typically be in an array or object.
      * @return static
      * @throws InvalidArgumentException if an unsupported argument type is
      *     provided.
      */
-    public function withParsedBody(object|array|null $data): ServerRequestInterface;
+    public function withParsedBody($data): ServerRequestInterface;
 
     /**
      * Retrieve attributes derived from the request.
@@ -224,11 +225,11 @@ interface ServerRequestInterface extends RequestInterface
      * specifying a default value to return if the attribute is not found.
      *
      * @param string $name The attribute name.
-     * @param mixed|null $default Default value to return if the attribute does not exist.
+     * @param mixed $default Default value to return if the attribute does not exist.
      * @return mixed
      * @see getAttributes()
      */
-    public function getAttribute(string $name, mixed $default = null): mixed;
+    public function getAttribute(string $name, $default = null);
 
     /**
      * Return an instance with the specified derived request attribute.
@@ -245,7 +246,7 @@ interface ServerRequestInterface extends RequestInterface
      * @return static
      * @see getAttributes()
      */
-    public function withAttribute(string $name, mixed $value): ServerRequestInterface;
+    public function withAttribute(string $name, $value): ServerRequestInterface;
 
     /**
      * Return an instance that removes the specified derived request attribute.

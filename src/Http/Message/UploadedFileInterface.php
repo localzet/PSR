@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace localzet\PSR\Http\Message;
 
@@ -13,7 +14,7 @@ use RuntimeException;
  * state of the current instance and return an instance that contains the
  * changed state.
  *
- * @package PSR-7 (HTTP Message Interfaces)
+ * @package PSR-7 (HTTP Message)
  */
 interface UploadedFileInterface
 {

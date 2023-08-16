@@ -1,5 +1,5 @@
 <p align="center"><a href="https://www.localzet.com" target="_blank">
-  <img src="https://static.localzet.com/full-localzet2.svg" width="400">
+  <img src="https://static.localzet.com/media/full-localzet2.png" width="400">
 </a></p>
 
 <p align="center">
@@ -19,3 +19,29 @@
   <img src="https://img.shields.io/github/license/localzet/PSR?label=%D0%9B%D0%B8%D1%86%D0%B5%D0%BD%D0%B7%D0%B8%D1%8F" alt="Лицензия">
 </a>
 </p>
+
+
+- ~~PSR-0 (Autoloading Standard)~~ (**DEPRECATED**)
+- ~~PSR-1 (Basic Coding Standard)~~ (**IMPOSSIBLE**)
+- ~~PSR-2 (Coding Style Guide)~~ (**DEPRECATED**)
+- **PSR-3 (Logger Interface)**
+- ~~PSR-4 (Autoloading Standard)~~ (**IMPOSSIBLE**)
+- ~~PSR-5 (PHPDoc Standard)~~ (**DRAFT**)
+- **PSR-6 (Caching Interface)**
+- **PSR-7 (HTTP Message)**
+- ~~PSR-8 (PHPDoc Standard)~~ (**ABANDONED**)
+- ~~PSR-9 (PHPDoc Standard)~~ (**ABANDONED**)
+- ~~PSR-10 (PHPDoc Standard)~~ (**ABANDONED**)
+- **PSR-11 (Container Interface)**
+- ~~PSR-12 (Extended Coding Style Guide)~~ (**IMPOSSIBLE**)
+- **PSR-13 (Hypermedia Links)**
+- **PSR-14 (Event Dispatcher)**
+- **PSR-15 (HTTP Server)**
+- **PSR-16 (Simple Cache)**
+- **PSR-17 (HTTP Factories)**
+- **PSR-18 (HTTP Client)**
+- ~~PSR-19 (PHPDoc tags)~~ (**DRAFT**)
+- **PSR-20 (Clock)**
+- ~~PSR-21 (Internationalization)~~ (**DRAFT**)
+- ~~PSR-22 (Application Tracing)~~ (**DRAFT**)
+

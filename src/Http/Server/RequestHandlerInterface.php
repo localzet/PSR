@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace localzet\PSR\Http\Server;
 
@@ -10,7 +11,7 @@ use localzet\PSR\Http\Message\{ResponseInterface, ServerRequestInterface};
  * An HTTP request handler process an HTTP request in order to produce an
  * HTTP response.
  *
- * @package PSR-15 (HTTP Server Request Handlers)
+ * @package PSR-15 (HTTP Server)
  */
 interface RequestHandlerInterface
 {
