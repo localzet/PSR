@@ -1,10 +1,14 @@
 {
   "name": "localzet/psr",
-  "description": "Localzet PSR Component for projects",
+  "description": "Localzet PSR is a component for projects that provides a set of common interfaces for PHP. Developed by Ivan Zorin, it adheres to the PHP Standard Recommendations (PSR).",
   "type": "library",
   "keywords": [
+    "PSR",
+    "PHP",
+    "library",
     "localzet",
-    "PSR"
+    "AGPL",
+    "component"
   ],
   "license": "AGPL-3.0-or-later",
   "authors": [
