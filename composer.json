@@ -17,8 +17,9 @@
   ],
   "support": {
     "email": "support@localzet.com",
+    "issues": "https://github.com/localzet/PSR/issues",
     "source": "https://github.com/localzet/PSR"
-  },
+},
   "autoload": {
     "psr-4": {
       "localzet\\PSR\\": "src"
